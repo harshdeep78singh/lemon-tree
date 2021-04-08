@@ -1,3 +1,6 @@
+# please suggest changes if u feel something wrong
+# like ,share and subscribe
+
 import os
 
 n=int(input("enter size:"))
