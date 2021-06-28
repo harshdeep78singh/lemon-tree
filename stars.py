@@ -1,6 +1,9 @@
 # please suggest changes if u feel something wrong
 # like ,share and subscribe
 
+# please suggest changes if u feel something wrong
+# like ,share and subscribe
+
 import os
 
 n=7
@@ -417,8 +420,6 @@ def Main():
     s=s.lower()
     name={}
     sx=0
-    c= os.get_terminal_size()
-    c = c.columns//((n*2)+1)
     for _ in range(len(s)):
         if s[_].isalpha():
             if s[_]=='n':
@@ -443,34 +444,12 @@ def Main():
                 sp.append("     ")
             name[sx]=sp
             sx=sx+1
-            if c-(len(name)%c)>ls:
-                pass
-            else:
-                for ka in range(c-(len(name)%c)):
-                    for ja in range(n):
-                        sp.append("     ")
-                    name[sx]=sp
-                    sx=sx+1
         else:
             continue
-    if len(name)%c==0:
-        no_of_lines=int(len(name)/c)
-    else:
-        no_of_lines=(len(name)//c)+1
-    if(len(name)%c==0):
-        iteration = c
-    else:
-        iteration = len(name)%c
-    for k in range(no_of_lines-1):
+    for k in range(len(name)):
         for i in range(n):
-            for j in range(c):
-                print(name[(c*k)+j][i],' ',end="")
+            print(name[k][i],' ',end="")
             print()
-        print()
-
-    for i in range(n):
-        for j in range(iteration):
-            print(name[(c*(no_of_lines-1))+j][i],' ',end="")
         print()
         
 
