@@ -3,7 +3,7 @@
 
 import os
 
-n=int(input("enter size:"))
+n=7
 if n%2==0: 
     n=n+1
 elif n>9:
@@ -413,7 +413,7 @@ def find(a,b):
 
 
 def Main():
-    s=input("enter name:")
+    s="Harshdeep"
     s=s.lower()
     name={}
     sx=0
