@@ -1,1 +1,1 @@
-
+from stars import Main
